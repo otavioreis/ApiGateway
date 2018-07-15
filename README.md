@@ -2,10 +2,10 @@
 Projeto criado como resulução do exercício 06 da aula 06 da disciplina Arquitetura de Backend e Microsserviços do curso de pós-graduação de Arquitetura de Softwares Distribuídos e, requisitado pelo professor Marco Mendes.
 
 Este projeto tem como objetivo servir como um gateway para todas as api's criadas anteriormente.
-[ArquiteturaBackEndApiLivraria](https://github.com/otavioreis/ArquiteturaBackEndApiLivraria)
-[ArquiteturaBackEndApiAuditoria](https://github.com/otavioreis/ArquiteturaBackEndApiAuditoria)
-[ArquiteturaBackEndApiAutenticacao](https://github.com/otavioreis/ArquiteturaBackEndApiAutenticacao)
-[ArquiteturaBackEndApiPagamento](https://github.com/otavioreis/ArquiteturaBackEndApiPagamento)
+[ArquiteturaBackEndApiLivraria](https://github.com/otavioreis/ArquiteturaBackEndApiLivraria)<br />
+[ArquiteturaBackEndApiAuditoria](https://github.com/otavioreis/ArquiteturaBackEndApiAuditoria)<br />
+[ArquiteturaBackEndApiAutenticacao](https://github.com/otavioreis/ArquiteturaBackEndApiAutenticacao)<br />
+[ArquiteturaBackEndApiPagamento](https://github.com/otavioreis/ArquiteturaBackEndApiPagamento)<br />
 
 O projeto foi desenvolvido utilizando c# juntamente com ASP.NET Core 2.0
 
@@ -21,10 +21,10 @@ http://localhost:55000</br></br>
 Seguindo as API's existentes, criamos um caminho (folder) para cada API.
 
 ### DESENHO DO GATEWAY:
-http://localhost:55000/apilivraria/
-http://localhost:55000/apiauditoria/
-http://localhost:55000/apiautenticacao/
-http://localhost:55000/apipagamento/
+http://localhost:55000/apilivraria/<br />
+http://localhost:55000/apiauditoria/<br />
+http://localhost:55000/apiautenticacao/<br />
+http://localhost:55000/apipagamento/<br />
 
 Sendo que os links para acesso continuam os mesmos, ou seja, se na api de livraria o endereço era http://localhost:56223/v1/public/livros/3982ecc0-5e96-4aec-8f61-5712f0d090d6 este passará a ser http://localhost:55000/apilivraria/v1/public/livros/3982ecc0-5e96-4aec-8f61-5712f0d090d6
 
