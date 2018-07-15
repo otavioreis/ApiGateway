@@ -1,0 +1,218 @@
+﻿{
+  "ReRoutes": [
+    //ApiLivraria
+
+    //Livros
+    //private
+    {
+      "DownstreamPathTemplate": "/v1/private/Livros",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 56223
+        }
+      ],
+      "UpstreamPathTemplate": "/apilivraria/v1/private/Livros",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    //public
+    {
+      "DownstreamPathTemplate": "/v1/public/Livros",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 56223
+        }
+      ],
+      "UpstreamPathTemplate": "/apilivraria/v1/public/Livros",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/v1/public/Livros/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 56223
+        }
+      ],
+      "UpstreamPathTemplate": "/apilivraria/v1/public/Livros/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/v1/public/Livros/{id}/comentario/{valor}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 56223
+        }
+      ],
+      "UpstreamPathTemplate": "/apilivraria/v1/public/Livros/{id}/comentario/{valor}",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/v1/public/Livros/autor/{valor}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 56223
+        }
+      ],
+      "UpstreamPathTemplate": "/apilivraria/v1/public/Livros/autor/{valor}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/v1/public/Livros/isbn/{valor}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 56223
+        }
+      ],
+      "UpstreamPathTemplate": "/apilivraria/v1/public/Livros/isbn/{valor}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/v1/public/Livros/nome/{valor}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 56223
+        }
+      ],
+      "UpstreamPathTemplate": "/apilivraria/v1/public/Livros/nome/{valor}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/v1/public/Livros/carrinho/{sessionId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 56223
+        }
+      ],
+      "UpstreamPathTemplate": "/apilivraria/v1/public/Livros/carrinho/{sessionId}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/v1/public/Livros/carrinho/{sessionId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 56223
+        }
+      ],
+      "UpstreamPathTemplate": "/apilivraria/v1/public/Livros/carrinho/{sessionId}",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/apilivraria/v1/public/Livros/{id}/carrinho/{sessionId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 56223
+        }
+      ],
+      "UpstreamPathTemplate": "/v1/public/Livros/{id}/carrinho/{sessionId}",
+      "UpstreamHttpMethod": [ "Delete" ]
+    },
+
+    //Pedidos
+    {
+      "DownstreamPathTemplate": "/v1/public/Pedidos/{sessionId}/{numeroCartao}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 56223
+        }
+      ],
+      "UpstreamPathTemplate": "/apilivraria/v1/public/Pedidos/{sessionId}/{numeroCartao}",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/v1/public/Pedidos/{idPedido}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 56223
+        }
+      ],
+      "UpstreamPathTemplate": "/apilivraria/v1/public/Pedidos/{idPedido}",
+      "UpstreamHttpMethod": [ "Delete" ]
+    },
+
+    //ApiAutenticação
+    //public
+    {
+      "DownstreamPathTemplate": "/v1/public/Autenticacao",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 60000
+        }
+      ],
+      "UpstreamPathTemplate": "/apiautenticacao/v1/public/Autenticacao",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+
+    //ApiAuditoria
+    //private
+    {
+      "DownstreamPathTemplate": "/v1/private/Auditoria",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 61000
+        }
+      ],
+      "UpstreamPathTemplate": "/apiauditoria/v1/private/Auditoria",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/v1/private/Auditoria",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 61000
+        }
+      ],
+      "UpstreamPathTemplate": "/apiauditoria/v1/private/Auditoria",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+
+    //ApiPagamento
+    //public
+    {
+      "DownstreamPathTemplate": "/v1/private/Pagamento",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 62000
+        }
+      ],
+      "UpstreamPathTemplate": "/apipagamento/v1/private/Pagamento",
+      "UpstreamHttpMethod": [ "Post" ]
+    }
+
+
+  ],
+  "GlobalConfiguration": {
+    "RequestIdKey": "OcRequestId",
+    "AdministrationPath": "/administration"
+  }
+}
