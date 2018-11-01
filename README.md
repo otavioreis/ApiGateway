@@ -9,10 +9,6 @@ Este projeto tem como objetivo servir como um gateway para todas as api's criada
 
 O projeto foi desenvolvido utilizando c# juntamente com ASP.NET Core 2.0
 
-## Grupo
-**_MATEUS SORIANO_** <br />
-**_OTÁVIO AUGUSTO DE QUEIROZ REIS_**
-
 ## Informações adicionais do projeto
 
 **URL configurada para o projeto - Ambiente de Desenvolvimento**<br />
